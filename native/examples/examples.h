@@ -36,6 +36,8 @@ void example_performance_test();
 
 void example_hashlookup_test();
 
+void example_substringmatch_test();
+
 /*
 Helper function: Prints the name of the example in a fancy banner.
 */

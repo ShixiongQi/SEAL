@@ -41,12 +41,12 @@ int main()
         bool valid = true;
         do
         {
-            cout << endl << "> Run example (1 ~ 8) or exit (0): ";
+            cout << endl << "> Run example (1 ~ 9) or exit (0): ";
             if (!(cin >> selection))
             {
                 valid = false;
             }
-            else if (selection < 0 || selection > 8)
+            else if (selection < 0 || selection > 9)
             {
                 valid = false;
             }
@@ -56,7 +56,7 @@ int main()
             }
             if (!valid)
             {
-                cout << "  [Beep~~] valid option: type 0 ~ 7" << endl;
+                cout << "  [Beep~~] valid option: type 0 ~ 9" << endl;
                 cin.clear();
                 cin.ignore(numeric_limits<streamsize>::max(), '\n');
             }
@@ -94,6 +94,10 @@ int main()
 
         case 8:
             example_hashlookup_test();
+            break;
+
+        case 9:
+            example_substringmatch_test();
             break;
 
         case 0:
